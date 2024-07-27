@@ -1,5 +1,5 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Leftside = () => {
   return (
@@ -11,39 +11,49 @@ const Leftside = () => {
           className={({ isActive }) =>
             isActive ? 'text-blue-600 font-semibold' : 'text-gray-600 hover:text-blue-600'
           }
-        >Home</NavLink>
+        >
+          Home
+        </NavLink>
         <NavLink
           to="/questions"
           exact
           className={({ isActive }) =>
             isActive ? 'text-blue-600 font-semibold' : 'text-gray-600 hover:text-blue-600'
           }
-        >Questions</NavLink>
+        >
+          Questions
+        </NavLink>
         <NavLink
           to="/public"
           exact
           className={({ isActive }) =>
             isActive ? 'text-blue-600 font-semibold' : 'text-gray-600 hover:text-blue-600'
           }
-        >PUBLIC</NavLink>
-         <NavLink
-          to="/public"
+        >
+          PUBLIC
+        </NavLink>
+        <NavLink
+          to="/tags"
           exact
           className={({ isActive }) =>
             isActive ? 'text-blue-600 font-semibold' : 'text-gray-600 hover:text-blue-600'
           }
-        >Tags</NavLink>
-         <NavLink
-          to="/public"
+        >
+          Tags
+        </NavLink>
+        <NavLink
+          to="/users"
           exact
           className={({ isActive }) =>
             isActive ? 'text-blue-600 font-semibold' : 'text-gray-600 hover:text-blue-600'
           }
-        >Users</NavLink>
+        >
+          Users
+        </NavLink>
       </div>
       <div className='border-l-4 border-gray-300 h-full absolute left-40 top-0 mt-24 ml-8'></div>
     </div>
-  )
-}
+  );
+};
 
-export default Leftside
+export default Leftside;

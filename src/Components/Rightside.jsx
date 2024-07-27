@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Rightside = () => {
   return (
-    <div>Rightside</div>
-  )
-}
+    <div className='mr-4'>
+      <div>Rightside</div>
+    </div>
+  );
+};
 
-export default Rightside
+export default Rightside;
