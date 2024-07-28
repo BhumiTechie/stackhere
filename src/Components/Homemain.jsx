@@ -10,16 +10,20 @@ const Homemain = () => {
   const location = useLocation();
   return (
     
-    <div className="flex  w-full">
+    <div className="flex ">
        <Leftside/>
        <Rightside/>
-      <div className="w-3/4">
+      <div className="w-full">
         {location.pathname === '/' ? (
           <h1 className="text-2xl font-bold my-4">Top Questions</h1>
         ) : (
           <h1 className="text-2xl font-bold my-4">All Questions</h1>
         )}
-        <button className="mb-4 px-4 py-2 bg-blue-600 text-white rounded">Ask Question</button>
+  <div className="w-full flex">
+  <button className="px-4 py-2 bg-blue-600 text-white rounded mx-auto">Ask Question</button>
+</div>
+
+
     </div>
     <div>
       {questionlist === null ? (

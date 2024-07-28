@@ -1,10 +1,16 @@
 import React from 'react';
+import Widget from './Widget';
+import Widgettag from './Widgettag';
+
 
 const Rightside = () => {
   return (
-    <div className='mr-4'>
-      <div>Rightside</div>
-    </div>
+    
+      <div>
+        <Widget/>
+        <Widgettag/>
+      </div>
+   
   );
 };
 
