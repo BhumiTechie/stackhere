@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-const QuestionList = () => {
+const QuestionList = ({ questionlist }) => {
   return (
-    <div>QuestionList</div>
-  )
-}
+    <div>
+      {questionlist.map((question, index) => (
+        <div key={index} className="mb-4 p-4 border rounded shadow-sm">
+          <h2 className="text-xl font-bold">{question.title}</h2>
+          <p>{question.body}</p>
+          <p className="text-sm text-gray-500">Asked by: {question.user}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
 
-export default QuestionList
+export default QuestionList;
